@@ -1,7 +1,7 @@
 <phpunit codecoverage="true" haltonfailure="true" haltonerror="true">
   <formatter type="clover" usefile="false"/>
   <batchtest>
-    <fileset dir="../../tests
+    <fileset dir="test
 ">
       <include name="**/*Test*.php"/>
     </fileset>
