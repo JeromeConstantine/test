@@ -2,7 +2,7 @@
 use PHPUnit\Framework\TestCase;
 class AddTest extends TestCase
 {
-    public function addTest()
+    public function additionTest()
     {
         $a = 5;
         $b = 5;
