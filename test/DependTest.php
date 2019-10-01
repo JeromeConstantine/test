@@ -8,9 +8,6 @@ class DependTest extends TestCase
         $this->assertEmpty($value);
         return $value;
     }
-    /**
-     * @depends testEmpty
-     */
     public function testPush(array $val)
     {
         array_push($val, 'first');
