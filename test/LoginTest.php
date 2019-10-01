@@ -1,7 +1,7 @@
 <?php
 use PHPUnit\Framework\TestCase;
 
-class LoginTest{
+class LoginTest extends TestCase{
 
 
     public function testEmpty()
