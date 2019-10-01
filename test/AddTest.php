@@ -8,6 +8,7 @@ class AddTest extends TestCase
         $b = 5;
         $c = $a + $b; 
         $this->assertEquals($c, 10);
+        return $c;
     }
 }
 ?>
