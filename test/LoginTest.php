@@ -10,7 +10,6 @@ class LoginTest{
         $password  ='12345';
         $this->assertEmpty($email);
         $this->assertEmpty($password);
-        return $value;
     }
 
     public function testsignin(){
