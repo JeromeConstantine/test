@@ -9,7 +9,7 @@ class LoginTest extends TestCase{
         $password  ='12345';
         $this->assertNotEmpty($email);
         $this->assertNotEmpty($password);
-        return [$email ,$password];
+        return [[$email,$password]];
     }
     public function testEmpty()
     {
@@ -20,7 +20,7 @@ class LoginTest extends TestCase{
     }
      
     /**
-     * @dataProvider testNotEmpty
+     * @depends testNotEmpty
      */
 
     public function testSignIn($email,$password){
@@ -28,7 +28,7 @@ class LoginTest extends TestCase{
     $this->assertEquals($email , 'Jerome');
 
     $this->assertEquals($password , '12345');
-    
+
     }
   
 }

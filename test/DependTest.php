@@ -11,12 +11,12 @@ class DependTest extends TestCase
     /**
      * @depends testEmpty
      */
-    public function testPush(array $value)
+    public function testPush(array $val)
     {
-        array_push($value, 'first');
-        $this->assertEquals('first', $value[count($value) - 1]);
-        $this->assertNotEmpty($value);
-        return $value;
+        array_push($val, 'first');
+        $this->assertEquals('first', $val[count($val) - 1]);
+        $this->assertNotEmpty($val);
+        return $val;
     }
 }
 ?>
