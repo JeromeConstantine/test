@@ -1,5 +1,5 @@
 <phpunit
-	bootstrap="test/DependTest.php"
+	bootstrap="../../vendor/phpunit/phpunit/tests/bootstrap.php"
 	backupGlobals="false"
 	colors="true"
 	convertErrorsToExceptions="true"
