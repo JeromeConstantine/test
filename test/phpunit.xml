@@ -13,7 +13,7 @@
 	</testsuites>
 	<filter>
 		<whitelist processUncoveredFilesFromWhitelist="true">
-			<directory suffix=".php">./php</directory>
+			<directory suffix=".php">./test</directory>
 		</whitelist>
 	</filter>
 	<log type="coverage-clover" target="results/reports/coverage/clover.xml"/>
