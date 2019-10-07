@@ -8,12 +8,12 @@
 	>
 	<testsuites>
 		<testsuite name="unit" suffix=".php">
-			<directory>./test/</directory>
+			<directory>.</directory>
 		</testsuite>
 	</testsuites>
 	<filter>
 		<whitelist processUncoveredFilesFromWhitelist="true">
-			<directory suffix=".php">./test</directory>
+			<directory suffix=".php">.</directory>
 		</whitelist>
 	</filter>
 	<log type="coverage-clover" target="results/reports/coverage/clover.xml"/>
