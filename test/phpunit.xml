@@ -1,19 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<phpunit colors="true"
-         convertErrorsToExceptions="true"
-         convertNoticesToExceptions="true"
-         convertWarningsToExceptions="true"
-         processIsolation="false"
-         stopOnFailure="false"
-         syntaxCheck="true">
-    <testsuites>
-        <testsuite name="Test suite">
-            <directory>.</directory>
-        </testsuite>
-    </testsuites>
-      <filter>
-  <whitelist processUncoveredFilesFromWhitelist="true">
-    <directory suffix=".php">./test/</directory>
-  </whitelist>
-</filter>
+<phpunit
+	bootstrap="test/DependTest.php"
+	backupGlobals="false"
+	colors="true"
+	convertErrorsToExceptions="true"
+	convertNoticesToExceptions="true"
+	convertWarningsToExceptions="true"
+	>
+	<testsuites>
+		<testsuite name="unit" suffix=".php">
+			<directory>./test/</directory>
+		</testsuite>
+	</testsuites>
+	<filter>
+		<whitelist processUncoveredFilesFromWhitelist="true">
+			<directory suffix=".php">./php</directory>
+		</whitelist>
+	</filter>
+	<log type="coverage-clover" target="results/reports/coverage/clover.xml"/>
 </phpunit>

@@ -2,16 +2,16 @@
 use PHPUnit\Framework\TestCase;
 class DependTest extends TestCase
 {
-    /**
-     * @depends testEmpty
-     */
+
     public function testEmpty()
     {
         $value = [];
         $this->assertEmpty($value);
         return $value;
     }
-  
+      /**
+     * @depends testEmpty
+     */
     public function testPush(array $val)
     {
         array_push($val, 'first');

@@ -1,15 +1,17 @@
 <?php
 use PHPUnit\Framework\TestCase;
-
 class LoginTest extends TestCase{
-
     public function testNotEmpty()
     {
-        $email ='Jerome';
-        $password  ='12345';
+        $email ='venkat@test.com';
+        $password  ='123';
         $this->assertNotEmpty($email);
         $this->assertNotEmpty($password);
-        return [[$email,$password]];
+        $connection = mysqli_connect('localhost:8889', 'root', 'root', 'ABC');
+            if(mysqli_connect_error()){
+                die("Database Connection Failed" . mysqli_connect_error() . mysqli_connect_errno());
+            }
+        return [[$email,$password,$connection]];
     }
     public function testEmpty()
     {
@@ -18,18 +20,31 @@ class LoginTest extends TestCase{
         $this->assertEmpty($email);
         $this->assertEmpty($password);
     }
-     
     /**
-     * @depends testNotEmpty
+     * @dataProvider testNotEmpty
      */
+    public function testSignIn($email,$password,$connection){
 
-    public function testSignIn($email,$password){
+            $sql = "SELECT * FROM employee WHERE BINARY email='$email'";
+	        $res = mysqli_query($connection, $sql);
+            if($res){
+                $this->assertTrue(true);    
+            }else{
+                $this->assertTrue(false);
+            }   
+        }
+    /**
+     * @dataProvider testNotEmpty
+     */
+        public function testSignUp($email,$password,$connection){
 
-    $this->assertEquals($email , 'Jerome');
-
-    $this->assertEquals($password , '12345');
-
-    }
-  
+            $sql = "SELECT * FROM employee WHERE BINARY email='$email'";
+	        $res = mysqli_query($connection, $sql);
+            if($res){
+                $this->assertTrue(true);    
+            }else{
+                $this->assertTrue(false);
+            }   
+        }    
 }
 ?>
