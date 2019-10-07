@@ -1,20 +1,2 @@
-<phpunit
-	bootstrap="../../vendor/phpunit/phpunit/tests/bootstrap.php"
-	backupGlobals="false"
-	colors="true"
-	convertErrorsToExceptions="true"
-	convertNoticesToExceptions="true"
-	convertWarningsToExceptions="true"
-	>
-	<testsuites>
-		<testsuite name="unit" suffix=".php">
-			<directory>.</directory>
-		</testsuite>
-	</testsuites>
-	<filter>
-		<whitelist processUncoveredFilesFromWhitelist="true">
-			<directory suffix=".php">.</directory>
-		</whitelist>
-	</filter>
-	<log type="coverage-clover" target="results/reports/coverage/clover.xml"/>
-</phpunit>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites/>
