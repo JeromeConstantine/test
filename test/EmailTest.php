@@ -1,6 +1,6 @@
 <?php
 use PHPUnit\Framework\TestCase;
-class DependTest extends TestCase
+class EmailTest extends TestCase
 {
     public function testEmpty()
     {
