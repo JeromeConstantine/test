@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1570525570">
-  <project timestamp="1570525570">
+<coverage generated="1570526276">
+  <project timestamp="1570526276">
     <file name="/Users/jerome/Desktop/Jenkins/DemoProject/src/Depend.php">
       <class name="Depend" namespace="global">
         <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="10" coveredelements="0"/>

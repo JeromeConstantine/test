@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /Users/jerome/Desktop/Jenkins/DemoProject</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="_css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="_css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="_css/style.css" rel="stylesheet" type="text/css">
+  <link href="_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">/Users/jerome/Desktop/Jenkins/DemoProject</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="src/Depend.php.html#2">Depend</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="test/AddTest.php.html#3">AddTest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="test/DatabaseTest.php.html#2">DatabaseTest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="test/EmailTest.php.html#3">DependTest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="test/EventDao.php.html#2">EventDao</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="test/EventRepositoryTest.php.html#4">EventRepositoryTest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="test/LoginTest.php.html#3">LoginTest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="test/MyGuestbookTest.php.html#3">MyGuestbookTest</a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="test/LoginTest.php.html#3">LoginTest</a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="test/MyGuestbookTest.php.html#3">MyGuestbookTest</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="test/DatabaseTest.php.html#2">DatabaseTest</a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="src/Depend.php.html#5"><abbr title="Depend::Empty">Empty</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="test/EventRepositoryTest.php.html#11"><abbr title="EventRepositoryTest::findById">findById</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="test/MyGuestbookTest.php.html#5"><abbr title="MyGuestbookTest::expectQueries">expectQueries</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="test/LoginTest.php.html#39"><abbr title="LoginTest::testSignUp">testSignUp</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="test/LoginTest.php.html#26"><abbr title="LoginTest::testSignIn">testSignIn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="test/LoginTest.php.html#16"><abbr title="LoginTest::testEmpty">testEmpty</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="test/LoginTest.php.html#4"><abbr title="LoginTest::testNotEmpty">testNotEmpty</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="test/EventRepositoryTest.php.html#16"><abbr title="EventRepositoryTest::testFindsCorrectEvent">testFindsCorrectEvent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="test/EventRepositoryTest.php.html#7"><abbr title="EventRepositoryTest::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Depend.php.html#10"><abbr title="Depend::testPush">testPush</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="test/EventDao.php.html#9"><abbr title="EventDao::findById">findById</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="test/EventDao.php.html#5"><abbr title="EventDao::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="test/EmailTest.php.html#14"><abbr title="DependTest::testPush">testPush</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="test/EmailTest.php.html#5"><abbr title="DependTest::testEmpty">testEmpty</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="test/DatabaseTest.php.html#4"><abbr title="DatabaseTest::testconnect_db">testconnect_db</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="test/AddTest.php.html#5"><abbr title="AddTest::testAddition">testAddition</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="test/MyGuestbookTest.php.html#34"><abbr title="MyGuestbookTest::testSomeSubjectThatUsesMysqli">testSomeSubjectThatUsesMysqli</abbr></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="test/DatabaseTest.php.html#4"><abbr title="DatabaseTest::testconnect_db">testconnect_db</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="test/LoginTest.php.html#4"><abbr title="LoginTest::testNotEmpty">testNotEmpty</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="test/LoginTest.php.html#26"><abbr title="LoginTest::testSignIn">testSignIn</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="test/LoginTest.php.html#39"><abbr title="LoginTest::testSignUp">testSignUp</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="test/MyGuestbookTest.php.html#5"><abbr title="MyGuestbookTest::expectQueries">expectQueries</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="test/MyGuestbookTest.php.html#34"><abbr title="MyGuestbookTest::testSomeSubjectThatUsesMysqli">testSomeSubjectThatUsesMysqli</abbr></a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 7.0.8</a> using <a href="https://secure.php.net/" target="_top">PHP 7.3.8</a> with <a href="https://xdebug.org/">Xdebug 2.7.2</a> and <a href="https://phpunit.de/">PHPUnit 8.3.5</a> at Tue Oct 8 11:17:56 CEST 2019.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="_js/jquery.min.js" type="text/javascript"></script>
+  <script src="_js/d3.min.js" type="text/javascript"></script>
+  <script src="_js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([8,0,0,0,0,0,0,0,0,0,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([17,0,0,0,0,0,0,0,0,0,0,0], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,2,"<a href=\"src\/Depend.php.html#2\">Depend<\/a>"],[0,1,"<a href=\"test\/AddTest.php.html#3\">AddTest<\/a>"],[0,2,"<a href=\"test\/DatabaseTest.php.html#2\">DatabaseTest<\/a>"],[0,2,"<a href=\"test\/EmailTest.php.html#3\">DependTest<\/a>"],[0,2,"<a href=\"test\/EventDao.php.html#2\">EventDao<\/a>"],[0,3,"<a href=\"test\/EventRepositoryTest.php.html#4\">EventRepositoryTest<\/a>"],[0,7,"<a href=\"test\/LoginTest.php.html#3\">LoginTest<\/a>"],[0,4,"<a href=\"test\/MyGuestbookTest.php.html#3\">MyGuestbookTest<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"src\/Depend.php.html#5\">Depend::Empty<\/a>"],[0,1,"<a href=\"src\/Depend.php.html#10\">Depend::testPush<\/a>"],[0,1,"<a href=\"test\/AddTest.php.html#5\">AddTest::testAddition<\/a>"],[0,2,"<a href=\"test\/DatabaseTest.php.html#4\">DatabaseTest::testconnect_db<\/a>"],[0,1,"<a href=\"test\/EmailTest.php.html#5\">DependTest::testEmpty<\/a>"],[0,1,"<a href=\"test\/EmailTest.php.html#14\">DependTest::testPush<\/a>"],[0,1,"<a href=\"test\/EventDao.php.html#5\">EventDao::__construct<\/a>"],[0,1,"<a href=\"test\/EventDao.php.html#9\">EventDao::findById<\/a>"],[0,1,"<a href=\"test\/EventRepositoryTest.php.html#7\">EventRepositoryTest::__construct<\/a>"],[0,1,"<a href=\"test\/EventRepositoryTest.php.html#11\">EventRepositoryTest::findById<\/a>"],[0,1,"<a href=\"test\/EventRepositoryTest.php.html#16\">EventRepositoryTest::testFindsCorrectEvent<\/a>"],[0,2,"<a href=\"test\/LoginTest.php.html#4\">LoginTest::testNotEmpty<\/a>"],[0,1,"<a href=\"test\/LoginTest.php.html#16\">LoginTest::testEmpty<\/a>"],[0,2,"<a href=\"test\/LoginTest.php.html#26\">LoginTest::testSignIn<\/a>"],[0,2,"<a href=\"test\/LoginTest.php.html#39\">LoginTest::testSignUp<\/a>"],[0,2,"<a href=\"test\/MyGuestbookTest.php.html#5\">MyGuestbookTest::expectQueries<\/a>"],[0,2,"<a href=\"test\/MyGuestbookTest.php.html#34\">MyGuestbookTest::testSomeSubjectThatUsesMysqli<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
