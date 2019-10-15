@@ -7,7 +7,7 @@ class Depend
         $value = [];
         return $value;
     }
-    public function testPush(array $val)
+    public function Push(array $val)
     {
         array_push($val, 'first');
         return $val;
