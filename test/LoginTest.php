@@ -1,8 +1,5 @@
 <?php
-namespace App\Lib1;
-include ('../src/login.php');
-echo \App\Lib1\login::userlogin("venkat@test.com","123");
-//use \cine\login :: userlogin();
+require "/Users/jerome/Desktop/Jenkins/DemoProject/src/login.php";
 use PHPUnit\Framework\TestCase;
 
 class loginTest extends TestCase{
@@ -10,15 +7,26 @@ class loginTest extends TestCase{
     protected $login;
     
     public function setUp(): void
-    {
-        $this->login = new login();
+    {   
+        $this->login = new mockingjay\login();
     }
-    
-    public function testlogin()
+    public function testSignInSuccess()
     {
-        $email = "venkat@test.com";
-        $password = "123";
-        $this->assertEquals(1,$this->login->userlogin($email,$password));
+        $email = "arun@gmail.com";
+        $password = "EL9ET";
+        $this->assertEquals('success',$this->login->userlogin($email,$password));
+    }
+    public function testSignInFail()
+    {
+        $email = "raja@gmail.com";
+        $password = "EL9ET";
+        $this->assertEquals('failure',$this->login->userlogin($email,$password));
+    }
+    public function testEmptyFields()
+    {
+        $email = "";
+        $password = "";
+        $this->assertEquals('empty',$this->login->userlogin($email,$password));
     }
 }
 
